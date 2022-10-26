@@ -11,6 +11,17 @@ html, body{
   background-color: #f4f3f1;
 }
 
+a{
+  color: blue;
+}
+
+.titulo{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
 
 .title-container {
   text-align: center;
