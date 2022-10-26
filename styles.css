@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  font-family: 'Acme', sans-serif;
+  background-color: #f4f3f1;
+}
+
+.title-container {
+  text-align: center;
+  width: 510px;
+  margin-top: 20px;
+}
+
+.title-container h1{
+  font-size: 42px;
+  letter-spacing: -2px;
+}
+
+
+.letter-yellow {
+  color: #c79c2e;
+}
+
+.letter-green {
+  color: #51b36e;
+}
+.letter-red {
+  color: #943e3c;
+}
+
+.keyboard-button {
+  border: 1px solid #252525;
+  font-size: 16px;
+  height: 40px;
+  width: 33px;
+  background-color: #f1f1f5;
+  border-radius: 4px;
+  margin: 0 8px 8px 0;
+  color: #000;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.keyboard-button:hover{
+  border: 2px solid #c79c2e;
+}
+
+.button-remove-and-enter {
+  height: 40px;
+  margin: 0 8px 8px 0;
+  width: 45px;
+  margin-bottom: 15px;
+}
+
+.app-container {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tile-row {
+  margin-bottom: 1rem;
+  justify-content: center;
+  display:flex;
+  box-sizing: border-box;
+}
+
+.tile-column {
+  background-color: #f4f3f1;
+  color: #252525;
+  height: 40px;
+  width: 45px;
+  border-radius: 0.25rem;
+  margin-right: 0.5rem;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  display:flex;
+  border: 1px solid #333;
+}
+
+
+.typing {
+  border: 3px solid #252525;
+}
+
+.disabled {
+  border: 1px solid #252525;
+}
+
+.right {
+  background-color: #51b36e;
+  color: #f4f3f1;
+}
+
+.wrong {
+  background-color: #943e3c;
+  color: #f4f3f1;
+}
+
+.displaced {
+  background-color: #c79c2e;
+  color: #f4f3f1;
+}
+
+.keyboard-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.keyboard-row-container {
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  justify-content: center;
+  display: flex;
+}
+
+.keyboard-row-container.notAlphabetic {
+  width:100%
+}
+
+.keyboard-row-container:not(.notAlphabetic) button {
+  width: 8%;
+  height: 40px;
+  border-radius: 0.25rem;
+  margin-right: 0.25rem;
+  border: 1px solid #252525;
+  font-size: 16px;
+  cursor: pointer;
+}
