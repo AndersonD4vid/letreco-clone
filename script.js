@@ -20,7 +20,7 @@ let currentRow = 0;
 let currentColumn = 0;
 
 // Letreco: Palavras
-const letreco = "VASCO";
+const letreco = "LINDO";
 // Mapa do letreco
 let letrecoMap = {};
 for (let index = 0; index < letreco.length; index++) {
